@@ -33,11 +33,12 @@ setup: ## Setup the environment
 	echo "https://"$(MY_DOMAIN)"/*" >> build/_headers
 	echo "  X-Robots-Tag: noindex" >> build/_headers
 	echo "  X-Content-Type-Options: nosniff" >> build/_headers
-
-	rm dynamic.lnk 2> /dev/null
+        touch dynamic.lnk
+	rm dynamic.lnk 2> dev/null
 	echo "/github/* https://github.com/DJStompZone/:splat" > dynamic.lnk
-
+        touch static.lnk
 	rm static.lnk 2> /dev/null
-	
+	echo "/ https://doggos.win/" > static.lnk
 	echo "/github https://github.com/DJStompZone/" >> static.lnk
 	echo "  " >> static.lnk
+        echo "/blog https://stomp.zone/" >> static.lnk
