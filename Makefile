@@ -35,16 +35,9 @@ setup: ## Setup the environment
 	echo "  X-Content-Type-Options: nosniff" >> build/_headers
 
 	rm dynamic.lnk 2> /dev/null
-	echo "/github/* https://github.com/bhdicaire/:splat" > dynamic.lnk
+	echo "/github/* https://github.com/DJStompZone/:splat" > dynamic.lnk
 
 	rm static.lnk 2> /dev/null
-	echo "/ https://bhdicaire.com/" > static.lnk
-	echo "/linkedin https://linkedin.com/in/bhdicaire/" >> static.lnk
-	echo "/x https://twitter.com/BHDicaire/" >> static.lnk
-	echo "/github https://github.com/bhdicaire/" >> static.lnk
-	echo "/gitlab https://gitlab.com/bhdicaire/" >> static.lnk
+	
+	echo "/github https://github.com/DJStompZone/" >> static.lnk
 	echo "  " >> static.lnk
-	echo "/blog https://blog.example/" >> static.lnk
-	echo "/mail https://outlook.office.com/" >> static.lnk
-	echo "/gmail https://gmail.com/" >> static.lnk
-	echo "/slack https://example.slack.com/" >> static.lnk
