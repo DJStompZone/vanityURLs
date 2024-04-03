@@ -14,10 +14,10 @@ debug:
 	[ -f $(localConfig) ] && source $(localConfig)
 
 config: ## Modify the .vanityURLS.conf before running setup
-	@vi $(localConfig)
+	@nano $(localConfig)
 
 setup: ## Setup the environment
-	cp vanityURLS.conf ~/.vanityURLS.conf
+	cp $(REPO_DIR)/vanityURLS.conf ~/.vanityURLS.conf
 
 	mkdir -p $(SCRIPT_DIR)
 	cp scripts/* $(SCRIPT_DIR)
