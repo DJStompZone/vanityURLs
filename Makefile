@@ -34,7 +34,7 @@ setup: ## Setup the environment
 	echo "  X-Robots-Tag: noindex" >> build/_headers
 	echo "  X-Content-Type-Options: nosniff" >> build/_headers
 	touch dynamic.lnk
-	rm dynamic.lnk 2> dev/null
+	rm dynamic.lnk 2> /dev/null
 	echo "/github/* https://github.com/DJStompZone/:splat" > dynamic.lnk
 	touch static.lnk
 	rm static.lnk 2> /dev/null
